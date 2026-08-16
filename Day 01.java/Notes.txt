@@ -2,7 +2,7 @@
 
 # JAVA DAY 01
 
-# JDK, JRE & JVM
+# INTRODUCTION TO JAVA, JDK, JRE & JVM
 
 # ==========================================================
 
@@ -12,25 +12,57 @@
 
 # ==========================================================
 
-# Java is a high-level, object-oriented programming language.
+# Java is a high-level, object-oriented, class-based
 
-# Java is used to build different types of applications.
+# programming language.
 
-# Java programs are compiled into bytecode.
+# Java was developed by Sun Microsystems.
 
-# Bytecode is executed by the Java Virtual Machine (JVM).
+# Java is widely used for backend development,
+
+# enterprise applications, Android development,
+
+# desktop applications and large-scale systems.
 
 # ==========================================================
 
-# JAVA PROGRAMMING FLOW
+# FEATURES OF JAVA
 
 # ==========================================================
 
-# Java Source Code
+# Important features of Java:
 
-#       ↓
+# 1. Platform Independent
 
-# Java Compiler
+# 2. Object-Oriented
+
+# 3. Robust
+
+# 4. Secure
+
+# 5. Portable
+
+# 6. Multithreaded
+
+# 7. Automatic Memory Management
+
+# ==========================================================
+
+# PLATFORM INDEPENDENCE
+
+# ==========================================================
+
+# Java is platform independent because Java source code
+
+# is compiled into bytecode.
+
+# Bytecode can run on different operating systems
+
+# using a suitable JVM.
+
+# Example:
+
+# Java Program
 
 #       ↓
 
@@ -42,71 +74,77 @@
 
 #       ↓
 
-# Program Output
+# Windows / macOS / Linux
 
 # ==========================================================
 
-# WHAT IS JDK?
+# WRITE ONCE, RUN ANYWHERE
 
 # ==========================================================
 
-# JDK stands for Java Development Kit.
+# Java follows the idea:
 
-# JDK is used to DEVELOP Java applications.
+# Write Once, Run Anywhere.
 
-# It contains the tools required to write, compile,
+# The same Java bytecode can run on different platforms
 
-# debug and run Java programs.
-
-# JDK contains:
-
-# JRE
-
-# JVM
-
-# Java Compiler
-
-# Other development tools
+# when a compatible JVM is available.
 
 # ==========================================================
 
-# WHAT IS JAVAC?
+# JAVA SOURCE CODE
 
 # ==========================================================
 
-# javac is the Java compiler.
+# Java programs are written in source code files.
+
+# Java source files use the .java extension.
+
+# Example:
+
+# Hello.java
+
+# ==========================================================
+
+# JAVA COMPILER
+
+# ==========================================================
+
+# The Java compiler is called javac.
 
 # It converts Java source code into bytecode.
 
 # Example:
 
-# Main.java
+# javac Hello.java
 
-#       ↓
+# The compiler produces:
 
-# javac Main.java
-
-#       ↓
-
-# Main.class
+# Hello.class
 
 # ==========================================================
 
-# WHAT IS JRE?
+# BYTECODE
 
 # ==========================================================
 
-# JRE stands for Java Runtime Environment.
+# Bytecode is the intermediate code generated
 
-# JRE provides the environment required to RUN Java applications.
+# by the Java compiler.
 
-# JRE contains:
+# Bytecode is stored inside a .class file.
 
-# JVM
+# Example:
 
-# Java runtime libraries
+# Hello.java
 
-# Other runtime components
+#       ↓
+
+# javac
+
+#       ↓
+
+# Hello.class
 
 # ==========================================================
 
@@ -118,457 +156,83 @@
 
 # JVM executes Java bytecode.
 
-# JVM is responsible for running Java programs.
+# JVM is responsible for executing Java programs
 
-# JVM also performs important runtime tasks such as:
+# and managing many runtime operations.
 
-# Memory management
+# JVM also provides memory management and
 
-# Garbage collection
-
-# Bytecode execution
+# garbage collection.
 
 # ==========================================================
 
-# JDK VS JRE VS JVM
+# WHAT IS JRE?
 
 # ==========================================================
 
-# JDK
+# JRE stands for Java Runtime Environment.
 
-# Java Development Kit
+# JRE provides the environment required to run
 
-# Used to DEVELOP Java applications.
+# Java applications.
 
-# Contains development tools.
+# JRE contains:
 
-#
+# 1. JVM
+
+# 2. Runtime libraries
+
+# Simplified structure:
 
 # JRE
 
-# Java Runtime Environment
+# ├── JVM
 
-# Used to RUN Java applications.
-
-# Provides the runtime environment.
-
-#
-
-# JVM
-
-# Java Virtual Machine
-
-# Executes Java bytecode.
+# └── Runtime Libraries
 
 # ==========================================================
 
-# SIMPLE RELATIONSHIP
+# WHAT IS JDK?
 
 # ==========================================================
 
-# JDK
+# JDK stands for Java Development Kit.
 
-#  └── JRE
+# JDK is used to develop Java applications.
 
-#       └── JVM
+# It provides development tools required by programmers.
 
-# ==========================================================
-
-# JDK DEVELOPMENT TOOLS
-
-# ==========================================================
-
-# Some important JDK tools are:
+# Important tools include:
 
 # javac  → Java compiler
 
-# java   → Runs Java applications
+# java   → Runs Java programs
 
-# javadoc → Generates Java documentation
+# jar    → Creates and manages JAR files
 
-# jar    → Creates Java archive files
+# javadoc → Generates documentation
 
-# jshell → Interactive Java shell
-
-# ==========================================================
-
-# JAVA SOURCE CODE
-
-# ==========================================================
-
-# Java source code is the code written by the programmer.
-
-# Java source files use the .java extension.
-
-# Example:
-
-# Main.java
-
-# ==========================================================
-
-# SIMPLE JAVA PROGRAM
-
-# ==========================================================
-
-public class Main {
-
-    public static void main(String[] args) {
-
-        System.out.println("Hello Java");
-
-    }
-
-}
-
-# Output
-
-# Hello Java
-
-# ==========================================================
-
-# COMPILING JAVA CODE
-
-# ==========================================================
-
-# Java source code is compiled using javac.
-
-# Command:
-
-# javac Main.java
-
-# After compilation, a .class file is generated.
-
-# Example:
-
-# Main.java
-
-#       ↓
-
-# javac Main.java
-
-#       ↓
-
-# Main.class
-
-# ==========================================================
-
-# BYTECODE
-
-# ==========================================================
-
-# Bytecode is the intermediate code generated by
-
-# the Java compiler.
-
-# Bytecode is stored inside a .class file.
-
-# Example:
-
-# Main.java
-
-#       ↓
-
-# Java Compiler
-
-#       ↓
-
-# Main.class
-
-# ==========================================================
-
-# RUNNING JAVA CODE
-
-# ==========================================================
-
-# Java bytecode is executed using the java command.
-
-# Example:
-
-# java Main
-
-# Output
-
-# Hello Java
-
-# ==========================================================
-
-# JAVA SOURCE CODE VS BYTECODE
-
-# ==========================================================
-
-# Source Code:
-
-# Written by the programmer.
-
-# File extension:
-
-# .java
-
-#
-
-# Bytecode:
-
-# Generated by the Java compiler.
-
-# File extension:
-
-# .class
-
-# ==========================================================
-
-# COMPLETE JAVA EXECUTION PROCESS
-
-# ==========================================================
-
-# Step 1:
-
-# Programmer writes Java source code.
-
-#
-
-# Step 2:
-
-# Source code is stored in a .java file.
-
-#
-
-# Step 3:
-
-# javac compiles the source code.
-
-#
-
-# Step 4:
-
-# Bytecode is generated.
-
-#
-
-# Step 5:
-
-# Bytecode is stored in a .class file.
-
-#
-
-# Step 6:
-
-# JVM loads and executes the bytecode.
-
-#
-
-# Step 7:
-
-# Program produces output.
-
-# ==========================================================
-
-# COMPLETE FLOW
-
-# ==========================================================
-
-# Main.java
-
-#      ↓
-
-# javac Main.java
-
-#      ↓
-
-# Main.class
-
-#      ↓
-
-# JVM
-
-#      ↓
-
-# Program Output
-
-# ==========================================================
-
-# WHY DOES JAVA USE BYTECODE?
-
-# ==========================================================
-
-# Java uses bytecode so that the same compiled program
-
-# can run on different platforms using a compatible JVM.
-
-# Example:
-
-# The same Java bytecode can run on:
-
-# Windows
-
-# macOS
-
-# Linux
-
-# ==========================================================
-
-# JAVA IS PLATFORM INDEPENDENT
-
-# ==========================================================
-
-# Java is called platform independent because Java source code
-
-# is compiled into platform-independent bytecode.
-
-# The bytecode can run on different operating systems
-
-# if a compatible JVM is available.
-
-# ==========================================================
-
-# PLATFORM INDEPENDENCE
-
-# ==========================================================
-
-# Java Code
-
-#     ↓
-
-# Bytecode
-
-#     ↓
-
-# Windows JVM
-
-# macOS JVM
-
-# Linux JVM
-
-# ==========================================================
-
-# IMPORTANT POINT
-
-# ==========================================================
-
-# Java Bytecode → Platform Independent
-
-# JVM → Platform Dependent
-
-# ==========================================================
-
-# WRITE ONCE, RUN ANYWHERE
-
-# ==========================================================
-
-# Java is commonly associated with the phrase:
-
-# "Write Once, Run Anywhere"
-
-# This means Java code can be compiled into bytecode
-
-# and the bytecode can run on different platforms
-
-# using a compatible JVM.
-
-# ==========================================================
+# Simplified structure:
 
 # JDK
 
-# ==========================================================
+# ├── Development Tools
 
-# JDK is needed when we want to DEVELOP Java programs.
-
-# We use the JDK for:
-
-# Writing Java programs
-
-# Compiling Java programs
-
-# Debugging Java programs
-
-# Running Java programs
+# └── JRE
 
 # ==========================================================
 
-# JRE
+# JDK vs JRE vs JVM
 
 # ==========================================================
 
-# JRE provides the environment required to RUN Java applications.
+# JDK → Used for developing Java applications.
 
-# It provides the JVM and runtime libraries required
+# JRE → Provides the environment for running applications.
 
-# by Java applications.
+# JVM → Executes Java bytecode.
 
-# ==========================================================
-
-# JVM
-
-# ==========================================================
-
-# JVM executes Java bytecode.
-
-# JVM also manages important runtime operations such as:
-
-# Memory management
-
-# Garbage collection
-
-# Bytecode execution
-
-# ==========================================================
-
-# IMPORTANT JAVA COMMANDS
-
-# ==========================================================
-
-# Check Java version:
-
-# java -version
-
-# Check Java compiler version:
-
-# javac -version
-
-# Compile a Java program:
-
-# javac Main.java
-
-# Run a Java program:
-
-# java Main
-
-# ==========================================================
-
-# JAVAC VS JAVA
-
-# ==========================================================
-
-# javac
-
-# ↓
-
-# Compiles Java source code into bytecode.
-
-#
-
-# java
-
-# ↓
-
-# Runs the Java program using the JVM.
-
-# ==========================================================
-
-# JDK VS JRE VS JVM — QUICK SUMMARY
-
-# ==========================================================
-
-# JDK → Develop Java applications
-
-# JRE → Run Java applications
-
-# JVM → Execute Java bytecode
-
-# ==========================================================
-
-# EASY WAY TO REMEMBER
-
-# ==========================================================
+# Easy way to remember:
 
 # JDK → DEVELOP
 
@@ -578,50 +242,236 @@ public class Main {
 
 # ==========================================================
 
-# IMPORTANT POINTS TO REMEMBER
+# RELATIONSHIP BETWEEN JDK, JRE AND JVM
 
 # ==========================================================
 
-# 1. Java source files use the .java extension.
+# JDK
 
-# 2. javac is the Java compiler.
+#  ↓
 
-# 3. javac converts source code into bytecode.
+# JRE
 
-# 4. Bytecode is stored in a .class file.
+#  ↓
 
-# 5. JVM executes Java bytecode.
+# JVM
 
-# 6. JRE provides the runtime environment.
+# The JDK provides development tools.
 
-# 7. JDK provides tools for Java development.
+# The runtime environment provides what is needed
 
-# 8. Java bytecode is platform independent.
+# to run Java applications.
 
-# 9. JVM is platform dependent.
-
-# 10. JDK contains the tools required to develop Java programs.
+# The JVM executes the bytecode.
 
 # ==========================================================
 
-# FINAL MEMORY FLOW
+# JAVA PROGRAM EXECUTION FLOW
 
 # ==========================================================
 
-# Java Source Code
+# Java source code:
+
+# Hello.java
 
 #       ↓
 
-#      javac
+# Java Compiler
+
+# javac Hello.java
 
 #       ↓
 
-#    Bytecode
+# Bytecode
+
+# Hello.class
 
 #       ↓
 
-#      JVM
+# JVM
 
 #       ↓
 
-#     Output
+# Machine-level execution
+
+#       ↓
+
+# Output
+
+# ==========================================================
+
+# COMPILING A JAVA PROGRAM
+
+# ==========================================================
+
+# Suppose we have:
+
+# Hello.java
+
+# Compile using:
+
+# javac Hello.java
+
+# After compilation:
+
+# Hello.class
+
+# is created.
+
+# ==========================================================
+
+# RUNNING A JAVA PROGRAM
+
+# ==========================================================
+
+# After compilation, run the program using:
+
+# java Hello
+
+# Do not write:
+
+# java Hello.java
+
+# when using the traditional compile-and-run process.
+
+# ==========================================================
+
+# JVM AND PLATFORM
+
+# ==========================================================
+
+# Java bytecode is platform independent.
+
+# JVM implementations are platform specific.
+
+# Example:
+
+# Windows has a JVM implementation.
+
+# macOS has a JVM implementation.
+
+# Linux has a JVM implementation.
+
+# Each JVM can execute Java bytecode.
+
+# ==========================================================
+
+# GARBAGE COLLECTION
+
+# ==========================================================
+
+# Java provides automatic memory management.
+
+# The JVM has a Garbage Collector.
+
+# Garbage Collection removes objects that are
+
+# no longer reachable by the program.
+
+# This helps manage memory automatically.
+
+# ==========================================================
+
+# WHY JAVA IS POPULAR
+
+# ==========================================================
+
+# Java is popular because it provides:
+
+# Platform independence
+
+# Object-oriented programming
+
+# Automatic memory management
+
+# Multithreading
+
+# Strong ecosystem
+
+# Security features
+
+# Large community
+
+# Good support for enterprise applications
+
+# ==========================================================
+
+# SIMPLE JAVA EXECUTION DIAGRAM
+
+# ==========================================================
+
+# Source Code
+
+#     ↓
+
+# Hello.java
+
+#     ↓
+
+# javac
+
+#     ↓
+
+# Bytecode
+
+#     ↓
+
+# Hello.class
+
+#     ↓
+
+# JVM
+
+#     ↓
+
+# Execution
+
+#     ↓
+
+# Output
+
+# ==========================================================
+
+# QUICK REVISION
+
+# ==========================================================
+
+# Java → Programming Language
+
+# JDK → Development Kit
+
+# JRE → Runtime Environment
+
+# JVM → Executes Bytecode
+
+# javac → Java Compiler
+
+# .java → Java Source Code
+
+# .class → Bytecode
+
+# ==========================================================
+
+# MOST IMPORTANT FLOW
+
+# ==========================================================
+
+# .java
+
+#   ↓
+
+# javac
+
+#   ↓
+
+# .class
+
+#   ↓
+
+# JVM
+
+#   ↓
+
+# Output
+
+# ==========================================================
