@@ -1,0 +1,291 @@
+==========================================================
+
+JAVA DAY 02
+
+INTERVIEW QUESTIONS & ANSWERS
+
+PROGRAM STRUCTURE, main(), COMMENTS, IDENTIFIERS & KEYWORDS
+
+==========================================================
+
+
+1. What is the basic structure of a Java program?
+
+Answer:
+A basic Java program contains a class, the main() method,
+and statements that perform the required operations.
+
+
+2. What is a class in Java?
+
+Answer:
+A class is a blueprint that defines the data and behavior
+of objects.
+
+
+3. What is the main() method?
+
+Answer:
+The main() method is the entry point of a normal Java
+application. The JVM starts program execution from the
+main() method.
+
+
+4. Why is the main() method declared as public?
+
+Answer:
+It is declared public so that the JVM can access the
+main() method from outside the class.
+
+
+5. Why is the main() method static?
+
+Answer:
+It is static so that the JVM can call the main() method
+without creating an object of the class.
+
+
+6. Why does main() have a void return type?
+
+Answer:
+void means that the main() method does not return any value.
+
+
+7. What is String[] args in the main() method?
+
+Answer:
+String[] args is an array of String values used to receive
+command-line arguments passed to the Java program.
+
+
+8. What is System.out.println()?
+
+Answer:
+System.out.println() is used to print output to the
+console and move the cursor to the next line.
+
+
+9. What is the difference between print() and println()?
+
+Answer:
+print() prints the output on the same line.
+
+println() prints the output and moves to the next line.
+
+
+10. What are comments in Java?
+
+Answer:
+Comments are statements written to explain code.
+They are ignored by the Java compiler.
+
+
+11. What are the types of comments in Java?
+
+Answer:
+Java has three common types of comments:
+
+1. Single-line comment
+2. Multi-line comment
+3. Documentation comment
+
+
+12. How do you write a single-line comment?
+
+Answer:
+A single-line comment starts with //.
+
+Example:
+
+// This is a comment
+
+
+13. How do you write a multi-line comment?
+
+Answer:
+A multi-line comment is written between /* and */.
+
+Example:
+
+/*
+This is a
+multi-line comment.
+*/
+
+
+14. What is a documentation comment?
+
+Answer:
+A documentation comment starts with /** and ends with */.
+It can be used by the Javadoc tool to generate
+documentation.
+
+
+15. What is an identifier?
+
+Answer:
+An identifier is a name given by the programmer to
+programming elements such as classes, variables, methods,
+and objects.
+
+
+16. What are the rules for identifiers in Java?
+
+Answer:
+Important rules are:
+
+1. An identifier can contain letters, digits, _ and $.
+2. It cannot start with a digit.
+3. It cannot contain spaces.
+4. It cannot be a Java keyword.
+5. Java identifiers are case-sensitive.
+
+
+17. Give examples of valid identifiers.
+
+Answer:
+
+studentName
+age
+age2
+_total
+$amount
+
+
+18. Give examples of invalid identifiers.
+
+Answer:
+
+2age
+student name
+class
+
+2age is invalid because it starts with a digit.
+
+student name is invalid because it contains a space.
+
+class is invalid because it is a Java keyword.
+
+
+19. Is Java case-sensitive?
+
+Answer:
+Yes. Java is case-sensitive.
+
+For example:
+
+age
+Age
+AGE
+
+These are treated as different identifiers.
+
+
+20. What are Java keywords?
+
+Answer:
+Keywords are reserved words that have a predefined meaning
+in Java. They cannot normally be used as identifiers.
+
+
+21. Give some examples of Java keywords.
+
+Answer:
+
+class
+public
+private
+static
+void
+int
+if
+else
+for
+while
+return
+new
+final
+extends
+implements
+
+
+22. What is the difference between a keyword and an identifier?
+
+Answer:
+A keyword is a reserved word with a predefined meaning in
+Java.
+
+An identifier is a name created by the programmer.
+
+
+Example:
+
+class Student {
+
+    int age;
+
+}
+
+class → Keyword
+Student → Identifier
+int → Keyword
+age → Identifier
+
+
+23. What are Java naming conventions?
+
+Answer:
+
+Class names → PascalCase
+
+Example:
+StudentDetails
+
+
+Variable and method names → camelCase
+
+Example:
+studentName
+calculateMarks()
+
+
+Constants → UPPER_CASE
+
+Example:
+MAX_SIZE
+
+
+==========================================================
+
+QUICK INTERVIEW REVISION
+
+==========================================================
+
+Class
+→ Blueprint for creating objects.
+
+main()
+→ Entry point of a normal Java application.
+
+public
+→ Allows the JVM to access main().
+
+static
+→ Allows main() to be called without creating an object.
+
+void
+→ Method does not return a value.
+
+String[] args
+→ Array used for command-line arguments.
+
+Comment
+→ Used to explain code and ignored by the compiler.
+
+Identifier
+→ Name given to a programming element.
+
+Keyword
+→ Reserved word with predefined meaning.
+
+==========================================================

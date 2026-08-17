@@ -1,0 +1,404 @@
+# ==========================================================
+
+# JAVA DAY 02
+
+# JAVA PROGRAM STRUCTURE, main(), COMMENTS,
+
+# IDENTIFIERS & KEYWORDS
+
+# ==========================================================
+
+# WHAT IS JAVA PROGRAM STRUCTURE?
+
+# Java programs are mainly organized using classes.
+
+# A basic Java program contains:
+
+# 1. Class
+
+# 2. main() method
+
+# 3. Statements
+
+# 4. Comments (optional)
+
+# Example:
+
+public class Hello {
+
+```
+public static void main(String[] args) {
+
+    System.out.println("Hello Java");
+
+}
+```
+
+}
+
+# ==========================================================
+
+# CLASS
+
+# ==========================================================
+
+# A class is a blueprint that contains data and methods.
+
+# Example:
+
+class Student {
+
+}
+
+# ==========================================================
+
+# main() METHOD
+
+# ==========================================================
+
+# main() is the entry point of a normal Java application.
+
+# Example:
+
+public static void main(String[] args) {
+
+}
+
+# ==========================================================
+
+# public
+
+# ==========================================================
+
+# public means the method can be accessed from outside
+
+# the class.
+
+# The JVM needs access to the main() method.
+
+# ==========================================================
+
+# static
+
+# ==========================================================
+
+# static means the method belongs to the class.
+
+# The JVM can call main() without creating an object.
+
+# ==========================================================
+
+# void
+
+# ==========================================================
+
+# void means the method does not return a value.
+
+# ==========================================================
+
+# String[] args
+
+# ==========================================================
+
+# String[] means an array of String values.
+
+# args is the name of the parameter.
+
+# Command-line arguments can be passed through args.
+
+# ==========================================================
+
+# System.out.println()
+
+# ==========================================================
+
+# System.out.println() is used to print output.
+
+# Example:
+
+System.out.println("Hello Java");
+
+# ==========================================================
+
+# print() vs println()
+
+# ==========================================================
+
+# print() prints on the same line.
+
+System.out.print("Hello");
+System.out.print("Java");
+
+# Output:
+
+HelloJava
+
+# println() prints and moves to the next line.
+
+System.out.println("Hello");
+System.out.println("Java");
+
+# Output:
+
+Hello
+Java
+
+# ==========================================================
+
+# COMMENTS
+
+# ==========================================================
+
+# Comments are used to explain code.
+
+# The compiler ignores comments.
+
+# ==========================================================
+
+# SINGLE-LINE COMMENT
+
+# ==========================================================
+
+# Use //
+
+# Example:
+
+// This is a comment
+
+# ==========================================================
+
+# MULTI-LINE COMMENT
+
+# ==========================================================
+
+# Use /* */
+
+# Example:
+
+/*
+This is a
+multi-line comment.
+*/
+
+# ==========================================================
+
+# DOCUMENTATION COMMENT
+
+# ==========================================================
+
+# Use /** */
+
+# Example:
+
+/**
+
+* This is a documentation comment.
+  */
+
+# Documentation comments can be used with Javadoc.
+
+# ==========================================================
+
+# IDENTIFIERS
+
+# ==========================================================
+
+# Identifiers are names given to programming elements.
+
+# Examples:
+
+# Class name
+
+# Variable name
+
+# Method name
+
+# Object name
+
+# Example:
+
+class Student {
+
+```
+int age;
+
+void display() {
+
+}
+```
+
+}
+
+# Student → Identifier
+
+# age → Identifier
+
+# display → Identifier
+
+# ==========================================================
+
+# RULES FOR IDENTIFIERS
+
+# ==========================================================
+
+# 1. Can contain letters, digits, _ and $
+
+# 2. Cannot start with a digit
+
+# 3. Cannot contain spaces
+
+# 4. Cannot be a Java keyword
+
+# 5. Java is case-sensitive
+
+# Valid:
+
+studentName
+age2
+_total
+$amount
+
+# Invalid:
+
+2age
+student name
+class
+
+# ==========================================================
+
+# NAMING CONVENTIONS
+
+# ==========================================================
+
+# Class → PascalCase
+
+class StudentDetails {
+
+}
+
+# Variable / Method → camelCase
+
+studentName
+
+calculateMarks()
+
+# Constants → UPPER_CASE
+
+MAX_SIZE
+
+# ==========================================================
+
+# KEYWORDS
+
+# ==========================================================
+
+# Keywords are reserved words that have a predefined
+
+# meaning in Java.
+
+# Keywords cannot normally be used as identifiers.
+
+# Examples:
+
+class
+public
+private
+static
+void
+int
+if
+else
+for
+while
+return
+new
+final
+extends
+implements
+
+# ==========================================================
+
+# KEYWORD vs IDENTIFIER
+
+# ==========================================================
+
+# Keyword:
+
+class
+int
+public
+static
+
+# These have predefined meanings in Java.
+
+# Identifier:
+
+Student
+age
+calculateMarks
+
+# These are names created by the programmer.
+
+# ==========================================================
+
+# QUICK REVISION
+
+# ==========================================================
+
+# Class
+
+# → Organizes Java code.
+
+# main()
+
+# → Entry point of a normal Java application.
+
+# public
+
+# → Allows access from outside the class.
+
+# static
+
+# → Can be called without creating an object.
+
+# void
+
+# → Does not return a value.
+
+# String[] args
+
+# → Array of String values.
+
+# Comments
+
+# → Used to explain code and ignored by the compiler.
+
+# Identifier
+
+# → Name given to a programming element.
+
+# Keyword
+
+# → Reserved word with predefined meaning.
+
+# ==========================================================
+
+# BASIC JAVA FLOW
+
+# ==========================================================
+
+# Class
+
+# ↓
+
+# main()
+
+# ↓
+
+# Statements
+
+# ↓
+
+# Output
+
+# ==========================================================
