@@ -1,0 +1,127 @@
+JAVA DAY 03
+INTERVIEW QUESTIONS AND ANSWERS
+
+Q1. What is a variable in Java?
+
+Answer:
+A variable is a named storage location used to store a value. Its value can be changed during program execution unless it is declared using final.
+
+
+Q2. What is the difference between declaration and initialization?
+
+Answer:
+Declaration specifies the variable's type and name, while initialization assigns a value to the variable.
+
+Example:
+int age;       // Declaration
+age = 17;      // Initialization
+
+
+Q3. What are the 8 primitive data types in Java?
+
+Answer:
+byte, short, int, long, float, double, char and boolean.
+
+
+Q4. What is the difference between primitive and reference data types?
+
+Answer:
+Primitive data types represent basic values, while reference types refer to objects.
+
+Examples of primitive types:
+int, double, char, boolean
+
+Examples of reference types:
+String, arrays and classes.
+
+
+Q5. Is String a primitive data type?
+
+Answer:
+No. String is a reference type because String is a class in Java.
+
+
+Q6. What is a constant in Java?
+
+Answer:
+A constant is a variable whose value cannot be reassigned after initialization. The final keyword is used to create constants.
+
+Example:
+final int MAX = 100;
+
+
+Q7. Why is the final keyword used?
+
+Answer:
+The final keyword prevents reassignment of a variable. It can also be used with methods and classes, where it has different effects.
+
+
+Q8. What is a literal in Java?
+
+Answer:
+A literal is a fixed value written directly in the source code.
+
+Examples:
+10
+10.5
+'A'
+"Java"
+true
+
+
+Q9. Why do we use L with a long literal?
+
+Answer:
+Integer literals are normally treated as int. The L suffix specifies that the literal is a long.
+
+Example:
+long number = 10000000000L;
+
+
+Q10. Why do we use f with a float literal?
+
+Answer:
+Decimal literals are treated as double by default. The f suffix specifies that the literal is a float.
+
+Example:
+float price = 10.5f;
+
+
+Q11. What is the difference between char and String?
+
+Answer:
+char stores a single UTF-16 code unit and uses single quotes, while String represents a sequence of characters and uses double quotes.
+
+Example:
+char grade = 'A';
+String name = "Java";
+
+
+Q12. What is boolean in Java?
+
+Answer:
+boolean is a primitive data type that stores either true or false.
+
+
+Q13. What is variable scope?
+
+Answer:
+Variable scope is the region of a program where a variable can be accessed.
+
+
+Q14. Which data type is commonly used for integer values?
+
+Answer:
+int is the commonly used integer data type in Java when the value fits within its range.
+
+
+Q15. Which data type is commonly used for decimal values?
+
+Answer:
+double is commonly used for decimal values because it provides greater precision than float.
+
+
+Q16. What is the purpose of meaningful variable names?
+
+Answer:
+Meaningful names make code easier to read, understand, maintain and debug.

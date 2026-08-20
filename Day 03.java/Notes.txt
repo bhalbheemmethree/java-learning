@@ -1,0 +1,229 @@
+JAVA DAY 03
+TOPIC: Variables, Constants, Data Types & Literals
+
+1. VARIABLES
+
+A variable is a named storage location used to store a value.
+
+Syntax:
+dataType variableName = value;
+
+Example:
+int age = 17;
+String name = "Bhalbheem";
+double salary = 50000.50;
+
+A variable's value can be changed:
+
+int age = 17;
+age = 18;
+
+
+2. DECLARATION AND INITIALIZATION
+
+Declaration:
+int age;
+
+Initialization:
+age = 17;
+
+Both together:
+int age = 17;
+
+
+3. CONSTANTS
+
+A constant is a variable whose value cannot be reassigned.
+
+Java uses the final keyword to create constants.
+
+Example:
+final double PI = 3.14159;
+
+PI = 4.0;    // Error
+
+Constant naming convention:
+MAX_VALUE
+MIN_VALUE
+PI
+COLLEGE_NAME
+
+
+4. DATA TYPES
+
+Java data types are divided into:
+
+1. Primitive data types
+2. Reference data types
+
+
+5. PRIMITIVE DATA TYPES
+
+Java has 8 primitive data types:
+
+byte
+short
+int
+long
+float
+double
+char
+boolean
+
+
+6. INTEGER DATA TYPES
+
+byte   → 8-bit
+short  → 16-bit
+int    → 32-bit
+long   → 64-bit
+
+Examples:
+
+byte age = 17;
+short year = 2026;
+int population = 100000;
+long distance = 10000000000L;
+
+
+7. FLOATING-POINT DATA TYPES
+
+float  → 32-bit
+double → 64-bit
+
+Examples:
+
+float price = 99.5f;
+double salary = 50000.50;
+
+Decimal literals are double by default.
+
+The f suffix is used for float literals.
+
+
+8. CHAR
+
+char stores a single UTF-16 code unit.
+
+Example:
+
+char grade = 'A';
+
+char uses single quotes.
+
+
+9. BOOLEAN
+
+boolean stores only:
+
+true
+false
+
+Example:
+
+boolean isPassed = true;
+
+
+10. REFERENCE DATA TYPES
+
+Reference types include:
+
+String
+Arrays
+Classes
+Objects
+Interfaces
+
+Example:
+
+String name = "Bhalbheem";
+
+String is NOT a primitive data type.
+
+
+11. LITERALS
+
+A literal is a fixed value written directly in Java source code.
+
+Examples:
+
+17
+10.5
+'A'
+"Java"
+true
+
+Examples:
+
+int age = 17;
+double price = 10.5;
+char grade = 'A';
+String language = "Java";
+boolean passed = true;
+
+
+12. VARIABLE NAMING
+
+Use meaningful names.
+
+Good:
+int studentAge;
+double accountBalance;
+String studentName;
+
+Avoid meaningless names:
+
+int x;
+int a;
+int abc;
+
+unless they make sense in the particular context.
+
+
+13. VARIABLE SCOPE
+
+Scope is the region of a program where a variable can be accessed.
+
+Example:
+
+public static void main(String[] args) {
+
+    int age = 17;
+
+    System.out.println(age);
+}
+
+The variable age is accessible within its scope.
+
+
+14. QUICK SUMMARY
+
+Variable:
+Stores a value.
+
+Constant:
+A variable that cannot be reassigned using final.
+
+Primitive types:
+byte, short, int, long, float, double, char, boolean.
+
+Reference types:
+String, arrays, classes, objects and interfaces.
+
+Literal:
+A fixed value written directly in source code.
+
+int:
+Commonly used integer type.
+
+double:
+Common floating-point type.
+
+char:
+Stores a single UTF-16 code unit.
+
+boolean:
+Stores true or false.
+
+final:
+Prevents reassignment of a variable.
