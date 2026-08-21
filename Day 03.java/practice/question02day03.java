@@ -8,7 +8,7 @@ public class question02day03 {
         String name = "Bhalbheem";
 
         double salary;
-        salary = 50000.50;
+        // salary = 50000.50;
         salary = 60000.75;
 
         double experience = 5.5;
