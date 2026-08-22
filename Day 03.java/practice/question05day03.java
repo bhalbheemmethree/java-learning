@@ -23,8 +23,8 @@ public class question05day03 {
         double CGPA;
         CGPA = 8.5;
 
-        char grade = 'A';
-        grade = 'B';
+        char grade = 'B';
+       
 
         final boolean isPassed = true;
         // isPassed = false; // This line will cause a compilation error because isPassed is declared as final.
@@ -39,6 +39,7 @@ public class question05day03 {
         System.out.println("CGPA: " + CGPA);
         System.out.println("Grade: " + grade);
         System.out.println("Is Passed: " + isPassed);
+        
 
     }
 
