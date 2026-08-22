@@ -1,0 +1,223 @@
+JAVA DAY 04
+TOPIC: TYPE CASTING & TYPE CONVERSION
+
+1. TYPE CONVERSION
+
+Type conversion means converting a value from one data type to another.
+
+Java mainly has two types:
+
+1. Widening Conversion
+2. Narrowing Conversion
+
+
+2. WIDENING CONVERSION
+
+Widening conversion means converting a smaller compatible data type into a larger compatible data type.
+
+Java performs widening conversion automatically.
+
+Example:
+
+int number = 100;
+double value = number;
+
+System.out.println(value);
+
+Output:
+100.0
+
+Here:
+int → double
+
+
+3. WIDENING CONVERSION ORDER
+
+A common widening order is:
+
+byte
+↓
+short
+↓
+int
+↓
+long
+↓
+float
+↓
+double
+
+Example:
+
+int number = 10;
+
+long a = number;
+float b = number;
+double c = number;
+
+
+4. NARROWING CONVERSION
+
+Narrowing conversion means converting a larger data type into a smaller compatible data type.
+
+Java does not perform this automatically because information may be lost.
+
+Explicit casting is required.
+
+Example:
+
+double number = 99.99;
+int value = (int) number;
+
+System.out.println(value);
+
+Output:
+99
+
+
+5. TYPE CASTING
+
+Type casting means explicitly converting a value from one data type to another.
+
+Syntax:
+
+targetType variable = (targetType) value;
+
+Example:
+
+double number = 10.75;
+int result = (int) number;
+
+
+6. IMPLICIT TYPE CONVERSION
+
+Implicit conversion happens automatically when Java converts a value to a compatible wider type.
+
+Example:
+
+int number = 50;
+double value = number;
+
+No explicit cast is required.
+
+
+7. EXPLICIT TYPE CASTING
+
+Explicit casting is performed manually using the target data type in parentheses.
+
+Example:
+
+double number = 50.75;
+int value = (int) number;
+
+
+8. DATA LOSS
+
+Narrowing conversion can cause data loss.
+
+Example:
+
+double number = 25.99;
+int value = (int) number;
+
+The value becomes:
+
+25
+
+The fractional part is discarded.
+
+
+9. CHAR TO INT
+
+A char can be converted to an integer type.
+
+Example:
+
+char ch = 'A';
+int value = ch;
+
+The integer represents the Unicode code unit of the character.
+
+
+10. INT TO CHAR
+
+An integer can be explicitly converted to char.
+
+Example:
+
+int value = 65;
+char ch = (char) value;
+
+System.out.println(ch);
+
+Output:
+A
+
+
+11. CASTING DOES NOT CHANGE THE ORIGINAL VARIABLE
+
+Example:
+
+double number = 10.99;
+int value = (int) number;
+
+number is still:
+
+10.99
+
+value is:
+
+10
+
+
+12. IMPORTANT DIFFERENCE
+
+Widening:
+
+Smaller compatible type → larger compatible type
+
+Usually automatic.
+
+Example:
+
+int → double
+
+
+Narrowing:
+
+Larger compatible type → smaller compatible type
+
+Requires explicit casting.
+
+Example:
+
+double → int
+
+
+13. QUICK SUMMARY
+
+Type Conversion:
+Converting a value from one data type to another.
+
+Widening:
+Smaller type → larger compatible type.
+
+Usually automatic.
+
+Narrowing:
+Larger type → smaller compatible type.
+
+Requires explicit casting.
+
+Implicit Conversion:
+Performed automatically by Java.
+
+Explicit Casting:
+Performed manually using (type).
+
+Example:
+
+int x = (int) 10.99;
+
+Result:
+10

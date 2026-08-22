@@ -1,0 +1,128 @@
+JAVA DAY 04
+INTERVIEW QUESTIONS AND ANSWERS
+
+Q1. What is type conversion in Java?
+
+Answer:
+Type conversion is the process of converting a value from one compatible data type to another.
+
+
+Q2. What are the two main types of type conversion?
+
+Answer:
+The two main types are widening conversion and narrowing conversion.
+
+
+Q3. What is widening conversion?
+
+Answer:
+Widening conversion converts a smaller compatible data type into a larger compatible data type. Java generally performs it automatically.
+
+Example:
+
+int x = 10;
+double y = x;
+
+
+Q4. What is narrowing conversion?
+
+Answer:
+Narrowing conversion converts a larger compatible data type into a smaller compatible data type. It requires explicit casting and may cause data loss.
+
+Example:
+
+double x = 10.5;
+int y = (int) x;
+
+
+Q5. What is type casting?
+
+Answer:
+Type casting is the explicit conversion of a value from one data type to another using the target data type in parentheses.
+
+Example:
+
+int x = (int) 10.5;
+
+
+Q6. What is implicit type conversion?
+
+Answer:
+Implicit type conversion is automatic conversion performed by Java when a value is converted to a compatible wider type.
+
+
+Q7. What is explicit type casting?
+
+Answer:
+Explicit type casting is manually converting a value to another data type using casting syntax.
+
+Example:
+
+double x = 10.5;
+int y = (int) x;
+
+
+Q8. Can narrowing conversion cause data loss?
+
+Answer:
+Yes. Narrowing conversion can lose information because the destination type may not be able to represent the original value completely.
+
+
+Q9. What happens when a double is converted to int using casting?
+
+Answer:
+The fractional part is discarded.
+
+Example:
+
+double x = 10.99;
+int y = (int) x;
+
+y becomes 10.
+
+
+Q10. Does casting change the original variable?
+
+Answer:
+No. Casting creates a converted value. It does not modify the original variable.
+
+Example:
+
+double x = 10.99;
+int y = (int) x;
+
+x remains 10.99.
+
+
+Q11. Can char be converted to int?
+
+Answer:
+Yes. A char can be converted to an integer type, producing its Unicode code unit value.
+
+
+Q12. Can an int be converted to char?
+
+Answer:
+Yes. An int can be explicitly cast to char.
+
+Example:
+
+int x = 65;
+char ch = (char) x;
+
+
+Q13. What is the syntax of explicit casting?
+
+Answer:
+
+(targetType) value
+
+Example:
+
+int x = (int) 10.5;
+
+
+Q14. Why does Java require explicit casting for narrowing conversion?
+
+Answer:
+Because narrowing conversion can result in loss of information, so Java requires the programmer to explicitly confirm the conversion.
