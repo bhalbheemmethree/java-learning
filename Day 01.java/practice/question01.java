@@ -6,7 +6,6 @@ public class question01 {
 
         System.out.println("Hello Java");
 
-        
     }
 
 }
