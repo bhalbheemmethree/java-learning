@@ -1,0 +1,164 @@
+# Java Day 05 — Interview Questions
+
+### 1. What are operators in Java?
+
+Operators are symbols used to perform operations on values and variables.
+
+### 2. What are the main types of operators in Java?
+
+* Arithmetic operators
+* Assignment operators
+* Relational operators
+* Logical operators
+* Unary operators
+* Increment and decrement operators
+* Ternary operator
+* Bitwise operators
+* Shift operators
+
+### 3. What are arithmetic operators in Java?
+
+Arithmetic operators are used for mathematical operations:
+`+`, `-`, `*`, `/`, `%`
+
+### 4. What is the difference between `/` and `%`?
+
+`/` returns the quotient, while `%` returns the remainder.
+
+Example:
+
+```java
+10 / 3  // 3
+10 % 3  // 1
+```
+
+### 5. What is the difference between `=` and `==`?
+
+`=` is the assignment operator used to assign a value.
+
+`==` is the equality operator used to compare values.
+
+### 6. What are relational operators?
+
+Relational operators compare two values and return a boolean result.
+
+`>`, `<`, `>=`, `<=`, `==`, `!=`
+
+### 7. What are logical operators in Java?
+
+Logical operators are:
+
+* `&&` — Logical AND
+* `||` — Logical OR
+* `!` — Logical NOT
+
+They are mainly used with boolean expressions.
+
+### 8. What is short-circuit evaluation?
+
+Short-circuit evaluation means Java may skip evaluating the remaining part of a logical expression when the result is already known.
+
+`&&` and `||` support short-circuit evaluation.
+
+### 9. What is the difference between `&&` and `&`?
+
+`&&` is short-circuit logical AND.
+
+`&` is a non-short-circuit AND operator and can also perform bitwise AND operations.
+
+### 10. What is the difference between `||` and `|`?
+
+`||` is short-circuit logical OR.
+
+`|` is a non-short-circuit OR operator and can also perform bitwise OR operations.
+
+### 11. What is the difference between `++x` and `x++`?
+
+`++x` is pre-increment: the value is incremented before it is used.
+
+`x++` is post-increment: the current value is used first, then the value is incremented.
+
+### 12. What is the difference between `--x` and `x--`?
+
+`--x` is pre-decrement: the value is decremented before it is used.
+
+`x--` is post-decrement: the current value is used first, then the value is decremented.
+
+### 13. Can a variable be used multiple times after `x++`?
+
+Yes. `x++` changes the value of `x` after its current value is used. Any later use of `x` sees the updated value.
+
+### 14. What are compound assignment operators?
+
+Compound assignment operators combine an operation with assignment.
+
+Examples:
+`+=`, `-=`, `*=`, `/=`, `%=`
+
+### 15. What is the ternary operator?
+
+The ternary operator is a compact way of writing a simple conditional expression.
+
+Syntax:
+
+```java
+condition ? value1 : value2;
+```
+
+### 16. What is operator precedence?
+
+Operator precedence determines how operators are grouped when an expression contains multiple operators.
+
+Example:
+
+```java
+int x = 2 + 3 * 4;
+```
+
+Multiplication has higher precedence than addition, so the result is `14`.
+
+### 17. What is associativity?
+
+Associativity determines the direction in which operators with the same precedence are grouped.
+
+### 18. What is integer division in Java?
+
+When both operands are integers, division produces an integer result.
+
+```java
+int x = 5 / 2;
+```
+
+Result:
+
+```text
+2
+```
+
+### 19. What is a unary operator?
+
+A unary operator works on one operand.
+
+Examples:
+`++x`, `--x`, `-x`, `+x`, `!x`
+
+### 20. What is the difference between unary and binary operators?
+
+A unary operator works on one operand.
+
+A binary operator works on two operands.
+
+Example:
+
+```java
+-x       // unary
+a + b    // binary
+```
+
+### 21. What happens when an expression contains multiple operators?
+
+Java follows its operator precedence and associativity rules to determine how the expression is grouped and evaluated.
+
+### 22. Why should parentheses be used in complex expressions?
+
+Parentheses make the intended grouping explicit and improve readability, reducing ambiguity when humans read the code.

@@ -1,0 +1,309 @@
+JAVA DAY 05
+TOPIC: OPERATORS
+
+1. WHAT IS AN OPERATOR?
+
+An operator is a symbol used to perform an operation on values.
+
+Example:
+
+int result = 10 + 5;
+
++ → operator
+10, 5 → operands
+
+
+2. ARITHMETIC OPERATORS
+
+Used for mathematical calculations.
+
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+%   Remainder
+
+Example:
+
+int a = 10;
+int b = 3;
+
+a + b = 13
+a - b = 7
+a * b = 30
+a / b = 3
+a % b = 1
+
+IMPORTANT:
+When both operands are int, division gives an integer result.
+
+10 / 3 → 3
+
+
+3. RELATIONAL OPERATORS
+
+Used to compare two values.
+
+>   Greater than
+<   Less than
+>=  Greater than or equal
+<=  Less than or equal
+==  Equal to
+!=  Not equal to
+
+The result is always true or false.
+
+Example:
+
+int a = 10;
+int b = 5;
+
+a > b  → true
+a == b → false
+
+
+4. LOGICAL OPERATORS
+
+Used to combine boolean conditions.
+
+&&  Logical AND
+||  Logical OR
+!   Logical NOT
+
+AND:
+Both conditions must be true.
+
+true && true → true
+true && false → false
+
+OR:
+At least one condition must be true.
+
+true || false → true
+false || false → false
+
+NOT:
+Reverses the result.
+
+!true → false
+!false → true
+
+
+5. ASSIGNMENT OPERATORS
+
+Used to assign or update values.
+
+=    Assignment
++=   Add and assign
+-=   Subtract and assign
+*=   Multiply and assign
+/=   Divide and assign
+%=   Remainder and assign
+
+Example:
+
+int x = 10;
+
+x += 5;
+
+Same as:
+
+x = x + 5;
+
+Now x = 15.
+
+
+6. UNARY OPERATORS
+
+Unary operators work on only one operand.
+
++   Positive
+-   Negative
+++  Increment
+--  Decrement
+!   NOT
+
+Example:
+
+int x = 5;
+
+x++;
+// x becomes 6
+
+
+7. PRE-INCREMENT AND POST-INCREMENT
+
+Pre-increment:
+
+++x
+
+First increases the value, then uses it.
+
+Example:
+
+int x = 5;
+int y = ++x;
+
+x = 6
+y = 6
+
+
+Post-increment:
+
+x++
+
+First uses the value, then increases it.
+
+Example:
+
+int x = 5;
+int y = x++;
+
+x = 6
+y = 5
+
+
+8. PRE-DECREMENT AND POST-DECREMENT
+
+Pre-decrement:
+
+--x
+
+First decreases, then uses the value.
+
+Example:
+
+int x = 5;
+int y = --x;
+
+x = 4
+y = 4
+
+
+Post-decrement:
+
+x--
+
+First uses the value, then decreases it.
+
+Example:
+
+int x = 5;
+int y = x--;
+
+x = 4
+y = 5
+
+
+9. TERNARY OPERATOR
+
+The ternary operator is a short form of simple if-else.
+
+Syntax:
+
+condition ? valueIfTrue : valueIfFalse;
+
+Example:
+
+int age = 20;
+
+String result =
+    age >= 18 ? "Adult" : "Minor";
+
+Output:
+
+Adult
+
+
+10. BITWISE OPERATORS
+
+Bitwise operators work on the bits of integer values.
+
+&   Bitwise AND
+|   Bitwise OR
+^   Bitwise XOR
+~   Bitwise NOT
+
+Example:
+
+5 & 3
+
+5 = 0101
+3 = 0011
+
+Result = 0001 = 1
+
+
+11. SHIFT OPERATORS
+
+<<   Left shift
+>>   Signed right shift
+>>>  Unsigned right shift
+
+Example:
+
+int x = 8;
+
+x << 1 → 16
+x >> 1 → 4
+
+>> preserves the sign for signed integers.
+
+>>> fills the left side with zeros.
+
+
+12. OPERATOR PRECEDENCE
+
+Operator precedence determines which operation happens first.
+
+Example:
+
+int result = 10 + 5 * 2;
+
+* happens before +.
+
+Result:
+
+20
+
+Parentheses have higher priority.
+
+Example:
+
+int result = (10 + 5) * 2;
+
+Result:
+
+30
+
+
+13. SHORT-CIRCUIT OPERATORS
+
+&& and || use short-circuit evaluation.
+
+&&:
+If the first condition is false, Java does not evaluate the second condition.
+
+||:
+If the first condition is true, Java does not evaluate the second condition.
+
+
+IMPORTANT DIFFERENCES
+
+=   → assignment
+==  → comparison
+
+/   → division
+%   → remainder
+
+&&  → logical AND
+&   → bitwise AND
+
+||  → logical OR
+|   → bitwise OR
+
+++x → increment first, then use
+x++ → use first, then increment
+
+--x → decrement first, then use
+x-- → use first, then decrement
