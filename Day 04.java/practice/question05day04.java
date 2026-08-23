@@ -5,8 +5,9 @@ public class question05day04 {
         int value = 65;
         char grade = (char) value;
 
-        // System.out.println(value);
+        System.out.println(value);
         System.out.println(grade);
     }
     
 }
+// Interger to character 
