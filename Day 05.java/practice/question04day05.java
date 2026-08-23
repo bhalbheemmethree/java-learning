@@ -11,3 +11,4 @@ public class question04day05 {
     }
     
 }
+// Ternary Operator
