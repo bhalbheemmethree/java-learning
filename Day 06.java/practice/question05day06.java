@@ -20,7 +20,7 @@ public class question05day06 {
         
         double percentage = (marks / 500.0) * 100;
 
-        System.out.println("Student Details");
+        System.out.println("Student Details:");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Height: " + height);

@@ -23,3 +23,4 @@ public class question01day06 {
 
 
     }
+// Taking Basic User Input
