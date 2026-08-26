@@ -1,0 +1,67 @@
+# Java Day 06 — Interview Questions
+
+### 1. What is Scanner in Java?
+
+`Scanner` is a class from the `java.util` package used to read input.
+
+### 2. How do you create a Scanner object?
+
+```java
+Scanner sc = new Scanner(System.in);
+```
+
+### 3. What is System.in?
+
+`System.in` represents the standard input stream, normally connected to the keyboard.
+
+### 4. Which package contains Scanner?
+
+```text
+java.util
+```
+
+Import:
+
+```java
+import java.util.Scanner;
+```
+
+### 5. How do you take an integer input?
+
+```java
+int number = sc.nextInt();
+```
+
+### 6. How do you take a double input?
+
+```java
+double value = sc.nextDouble();
+```
+
+### 7. What is the difference between next() and nextLine()?
+
+`next()` reads one token/word.
+
+`nextLine()` reads the complete line, including spaces.
+
+### 8. What is the difference between print() and println()?
+
+`print()` does not move to the next line.
+
+`println()` moves to the next line after printing.
+
+### 9. What is printf() used for?
+
+`printf()` is used to print formatted output.
+
+### 10. Why is nextLine() sometimes required after nextInt()?
+
+`nextInt()` leaves the newline character in the input buffer. An additional `nextLine()` consumes that newline before reading the actual line.
+
+### 11. What happens if invalid input is given to nextInt()?
+
+`Scanner` can throw an `InputMismatchException` when the entered value cannot be interpreted as an integer.
+
+### 12. What is System.out?
+
+`System.out` is the standard output stream used to display normal program output.

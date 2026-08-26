@@ -1,0 +1,189 @@
+# Java Day 06 — Input & Output
+
+## 1. Output in Java
+
+### println()
+
+Prints output and moves to the next line.
+
+```java
+System.out.println("Hello");
+```
+
+### print()
+
+Prints output without moving to the next line.
+
+```java
+System.out.print("Hello");
+```
+
+### printf()
+
+Used for formatted output.
+
+```java
+double price = 99.5;
+
+System.out.printf("Price: %.2f", price);
+```
+
+Common format specifiers:
+
+```text
+%d → int
+%f → floating-point
+%s → String
+%c → char
+%b → boolean
+%n → new line
+```
+
+---
+
+## 2. Scanner
+
+`Scanner` is commonly used to take keyboard input.
+
+Import:
+
+```java
+import java.util.Scanner;
+```
+
+Create Scanner:
+
+```java
+Scanner sc = new Scanner(System.in);
+```
+
+`System.in` represents the standard input stream.
+
+---
+
+## 3. Taking Different Inputs
+
+### int
+
+```java
+int age = sc.nextInt();
+```
+
+### long
+
+```java
+long number = sc.nextLong();
+```
+
+### float
+
+```java
+float value = sc.nextFloat();
+```
+
+### double
+
+```java
+double value = sc.nextDouble();
+```
+
+### boolean
+
+```java
+boolean result = sc.nextBoolean();
+```
+
+### String — one word
+
+```java
+String name = sc.next();
+```
+
+### String — complete line
+
+```java
+String name = sc.nextLine();
+```
+
+---
+
+## 4. next() vs nextLine()
+
+`next()` reads one token/word.
+
+```text
+Bhalbheem Methree
+```
+
+`next()` reads:
+
+```text
+Bhalbheem
+```
+
+`nextLine()` reads the complete line:
+
+```text
+Bhalbheem Methree
+```
+
+---
+
+## 5. nextInt() + nextLine() Problem
+
+This is a common issue:
+
+```java
+int age = sc.nextInt();
+String name = sc.nextLine();
+```
+
+`nextInt()` leaves the newline in the input buffer.
+
+Use:
+
+```java
+int age = sc.nextInt();
+sc.nextLine();
+
+String name = sc.nextLine();
+```
+
+The extra `nextLine()` consumes the remaining newline.
+
+---
+
+## 6. Closing Scanner
+
+When finished:
+
+```java
+sc.close();
+```
+
+---
+
+## 7. Basic Input Program
+
+```java
+import java.util.Scanner;
+
+public class InputExample {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+
+        sc.close();
+    }
+}
+```
