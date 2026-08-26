@@ -33,3 +33,4 @@ public class question04day06 {
 
     }
 }
+// Taking numbers and using arthemetic operators

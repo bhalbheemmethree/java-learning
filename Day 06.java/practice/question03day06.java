@@ -28,9 +28,9 @@ public class question03day06 {
         System.out.println("Grade: " + grade);
         System.out.println("Passed: " + isPassed);
 
-
+        sc.close();
     }
 }
-
+// Building a student profile 
 
 

@@ -4,7 +4,7 @@ public class question02day06 {
 
     public static void main(String[] args) {
         
-        Scanner sc = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter first Number:");
         int num1 = sc.nextInt();
@@ -23,3 +23,4 @@ public class question02day06 {
 
     }
 }
+// Taking input as numbers and adding it 

@@ -28,6 +28,7 @@ public class question05day06 {
         System.out.println("Percanatage: " + percentage);
 
 
-
+        sc.close();
     }
 }
+// calculation of percenatge in student mark sheet 
