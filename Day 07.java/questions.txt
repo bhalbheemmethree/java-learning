@@ -1,0 +1,89 @@
+# Java Day 07 — Interview Questions
+
+### 1. What is a conditional statement in Java?
+
+A conditional statement allows a program to execute different code depending on whether a condition is true or false.
+
+### 2. What is an if statement?
+
+An `if` statement executes a block of code when its condition evaluates to `true`.
+
+### 3. What is the difference between if and if-else?
+
+`if` provides a block for the true condition.
+
+`if-else` provides two possible paths: one when the condition is true and another when it is false.
+
+### 4. What is an else-if ladder?
+
+An `else-if` ladder is used to check multiple conditions sequentially.
+
+### 5. How does Java evaluate an else-if ladder?
+
+Java checks conditions from top to bottom. Once a condition is true, its block executes and the remaining conditions are skipped.
+
+### 6. What is nested if?
+
+A nested `if` is an `if` statement placed inside another `if` statement.
+
+### 7. What is a switch statement?
+
+`switch` is a control statement used to select one execution path based on the value of an expression.
+
+### 8. What is a case in switch?
+
+A `case` represents a possible value that can match the switch expression.
+
+### 9. What is the purpose of break in switch?
+
+`break` terminates the switch after the matching case and prevents execution from continuing into subsequent cases.
+
+### 10. What happens if break is omitted from a switch case?
+
+Execution can continue into the followinis the purpose g cases. This behavior is called fall-through.
+
+### 11. What of default in switch?
+
+`default` executes when none of the specified cases match.
+
+### 12. Is default mandatory in switch?
+
+No. `default` is optional.
+
+### 13. When should you use if-else instead of switch?
+
+Use `if-else` when conditions involve ranges, comparisons, or complex boolean expressions.
+
+### 14. When is switch useful?
+
+`switch` is useful when comparing one expression against multiple fixed values, such as menu choices or predefined options.
+
+### 15. What is the ternary operator?
+
+The ternary operator is a compact conditional expression with the syntax:
+
+```java
+condition ? value1 : value2
+```
+
+### 16. Why is it called a ternary operator?
+
+Because it operates on three parts: a condition, a value for true, and a value for false.
+
+### 17. What is the difference between if-else and the ternary operator?
+
+`if-else` is a control statement that can execute blocks of statements.
+
+The ternary operator is an expression that produces a value.
+
+### 18. Can ternary operators replace every if-else statement?
+
+No. Ternary is best for simple value-selection decisions. Complex logic is better written using `if-else`.
+
+### 19. What is fall-through in switch?
+
+Fall-through occurs when execution continues from one matching case into subsequent cases because there is no `break`.
+
+### 20. Can multiple cases have the same code in switch?
+
+Yes. Multiple cases can be placed together before a common block of code.

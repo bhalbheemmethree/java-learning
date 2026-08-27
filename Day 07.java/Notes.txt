@@ -1,0 +1,278 @@
+# Java Day 07 — Conditional Statements
+
+## 1. What are Conditional Statements?
+
+Conditional statements allow a program to make decisions based on conditions.
+
+Example:
+
+```java
+if (age >= 18) {
+    System.out.println("Adult");
+}
+```
+
+If the condition is `true`, the code inside the block executes.
+
+---
+
+## 2. if Statement
+
+Used when you want to execute code only when a condition is true.
+
+Syntax:
+
+```java
+if (condition) {
+    // code
+}
+```
+
+Example:
+
+```java
+int age = 20;
+
+if (age >= 18) {
+    System.out.println("Eligible");
+}
+```
+
+---
+
+## 3. if-else Statement
+
+Used when there are two possible paths.
+
+```java
+if (condition) {
+    // if condition is true
+} else {
+    // if condition is false
+}
+```
+
+Example:
+
+```java
+int age = 16;
+
+if (age >= 18) {
+    System.out.println("Adult");
+} else {
+    System.out.println("Minor");
+}
+```
+
+---
+
+## 4. else-if
+
+Used when there are multiple conditions.
+
+```java
+if (condition1) {
+    // code
+} else if (condition2) {
+    // code
+} else {
+    // default code
+}
+```
+
+Example:
+
+```java
+int marks = 75;
+
+if (marks >= 90) {
+    System.out.println("A");
+} else if (marks >= 75) {
+    System.out.println("B");
+} else if (marks >= 50) {
+    System.out.println("C");
+} else {
+    System.out.println("Fail");
+}
+```
+
+Java checks the conditions **from top to bottom**.
+
+Once one condition is true, its block executes and the remaining `else-if` conditions are skipped.
+
+---
+
+## 5. Nested if
+
+An `if` statement inside another `if` statement is called nested `if`.
+
+```java
+if (age >= 18) {
+
+    if (hasLicense) {
+        System.out.println("Can drive");
+    }
+}
+```
+
+---
+
+## 6. switch Statement
+
+`switch` is useful when you want to compare one expression against multiple fixed values.
+
+Example:
+
+```java
+int day = 2;
+
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    default:
+        System.out.println("Invalid day");
+}
+```
+
+Output:
+
+```text
+Tuesday
+```
+
+---
+
+## 7. case
+
+Each possible value inside a `switch` is written using `case`.
+
+```java
+case 1:
+    System.out.println("Monday");
+    break;
+```
+
+---
+
+## 8. break in switch
+
+`break` stops execution of the switch after the matching case.
+
+Without `break`, execution can continue into the following cases. This is called **fall-through**.
+
+---
+
+## 9. default
+
+`default` executes when none of the cases match.
+
+```java
+switch (day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    default:
+        System.out.println("Invalid day");
+}
+```
+
+`default` is optional.
+
+---
+
+## 10. switch vs if-else
+
+Use `if-else` when:
+
+* Conditions involve ranges
+* Conditions involve complex expressions
+* Different conditions need to be evaluated
+
+Use `switch` when:
+
+* Comparing one expression against several specific values
+* Menu-style choices are involved
+* The possible values are fixed
+
+Example:
+
+```java
+if (marks >= 90)
+```
+
+is better suited to `if`.
+
+While:
+
+```java
+switch (day)
+```
+
+is naturally suited to `switch`.
+
+---
+
+## 11. Ternary Operator
+
+The ternary operator is a compact way to write a simple conditional expression.
+
+Syntax:
+
+```java
+condition ? value1 : value2;
+```
+
+Example:
+
+```java
+int age = 20;
+
+String result = age >= 18 ? "Adult" : "Minor";
+```
+
+It is essentially:
+
+```text
+condition
+   ↓
+true  → value1
+false → value2
+```
+
+Use ternary for **simple decisions**, not complicated logic.
+
+---
+
+## 12. Important Difference
+
+`if-else` executes statements:
+
+```java
+if (age >= 18) {
+    System.out.println("Adult");
+}
+```
+
+Ternary produces a value:
+
+```java
+String result = age >= 18 ? "Adult" : "Minor";
+```
+
+---
+
+## 13. Important Rules
+
+* Conditions in `if` must produce a boolean result.
+* `else` does not have a condition.
+* Only one branch of an `if-else-if-else` chain executes.
+* `break` is commonly used to stop a `switch` case.
+* `default` handles unmatched `switch` values.
+* Ternary uses exactly three parts: condition, true value, false value.
