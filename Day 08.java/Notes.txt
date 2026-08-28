@@ -1,0 +1,235 @@
+# Java Day 08 — Loops
+
+## 1. What is a Loop?
+
+A loop is used to repeat a block of code multiple times.
+
+Main loops in Java:
+
+* for loop
+* while loop
+* do-while loop
+
+---
+
+## 2. for Loop
+
+Used when the number of repetitions is usually known.
+
+### Syntax
+
+```java
+for (initialization; condition; update) {
+    // code
+}
+```
+
+### Example
+
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+### Three Parts
+
+```text
+initialization → starting value
+condition      → checks whether loop should run
+update         → changes the value
+```
+
+Flow:
+
+```text
+Start → Condition → Code → Update → Condition
+```
+
+---
+
+## 3. while Loop
+
+Used when repetition depends mainly on a condition.
+
+### Syntax
+
+```java
+while (condition) {
+    // code
+}
+```
+
+### Example
+
+```java
+int i = 1;
+
+while (i <= 5) {
+    System.out.println(i);
+    i++;
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+Important: Make sure the loop variable changes. Otherwise, the loop can become an infinite loop.
+
+---
+
+## 4. do-while Loop
+
+A do-while loop executes the code at least once before checking the condition.
+
+### Syntax
+
+```java
+do {
+    // code
+} while (condition);
+```
+
+### Example
+
+```java
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+} while (i <= 5);
+```
+
+The main difference:
+
+```text
+while     → condition checked first
+do-while  → code runs first, condition checked afterward
+```
+
+---
+
+## 5. break
+
+`break` completely stops the loop.
+
+```java
+for (int i = 1; i <= 10; i++) {
+
+    if (i == 5) {
+        break;
+    }
+
+    System.out.println(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+```
+
+Remember:
+
+```text
+break = stop the loop
+```
+
+---
+
+## 6. continue
+
+`continue` skips the current iteration and moves to the next iteration.
+
+```java
+for (int i = 1; i <= 5; i++) {
+
+    if (i == 3) {
+        continue;
+    }
+
+    System.out.println(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+4
+5
+```
+
+Remember:
+
+```text
+continue = skip current iteration
+```
+
+---
+
+## 7. Nested Loops
+
+A loop inside another loop is called a nested loop.
+
+```java
+for (int i = 1; i <= 3; i++) {
+
+    for (int j = 1; j <= 2; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+```
+
+The inner loop runs completely for each iteration of the outer loop.
+
+Common uses:
+
+* Patterns
+* Tables
+* 2D arrays
+
+---
+
+## 8. Quick Difference
+
+```text
+for       → repetitions are usually known
+while     → condition-based loop
+do-while  → executes at least once
+break     → stops the loop
+continue  → skips current iteration
+nested    → loop inside another loop
+```
+
+## Important
+
+Always check:
+
+1. Where the loop starts
+2. What condition is checked
+3. How the variable changes
+4. When the loop stops
